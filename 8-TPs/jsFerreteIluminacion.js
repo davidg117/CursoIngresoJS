@@ -22,14 +22,7 @@ function CalcularPrecio ()
 	marca=document.getElementById('Marca').value;
 	precioBruto=cantidadLamparas*35;
 	console.info("bruto" , precioBruto);
-	switch(cantidadLamparas)
-	{
-		case 5:
-		switch(marca)
-		{
 			
-		}
-	}
 	
 	if(cantidadLamparas>5)
 	{

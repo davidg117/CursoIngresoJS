@@ -51,6 +51,17 @@ function Promedio ()
 }
 function PrecioFinal () 
 {
+	var precio1;
+	var precio2;
+	var precio3;
+	var precioFinal
+	var total;
+
+	precio1=document.getElementById('PrecioUno').value;
+	precio2=document.getElementById('PrecioDos').value;
+	precio3=document.getElementById('PrecioTres').value;
+
+
 	
 	
 }
