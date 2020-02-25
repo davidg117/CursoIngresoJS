@@ -11,5 +11,7 @@ function mostrar()
 	apellido=prompt("Ponga apellido");
 	document.getElementById('elNombre').value=nombre;
 
+	alert("Se llama "+nombre+" Y apellido es "+apellido);
+
 }
 

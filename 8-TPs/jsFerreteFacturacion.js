@@ -54,14 +54,22 @@ function PrecioFinal ()
 	var precio1;
 	var precio2;
 	var precio3;
-	var precioFinal
-	var total;
+	var aumento;
+	var suma;
+	var precioFinal;
 
 	precio1=document.getElementById('PrecioUno').value;
 	precio2=document.getElementById('PrecioDos').value;
 	precio3=document.getElementById('PrecioTres').value;
 
-	precioFinal=(precio1+precio2+precio3)*1,21;
+	precio1=parseInt(precio1);
+	precio2=parseInt(precio2);
+	precio3=parseInt(precio3);
+
+	aumento=1.21;
+	suma=precio1+precio2+precio3;
+	precioFinal=suma*aumento;
+
 	alert("el precioFinal es="+precioFinal);
 
 
