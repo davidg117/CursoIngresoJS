@@ -1,7 +1,14 @@
 function mostrar()
 {
+	var numero;
+	var repeticiones;
+	numero=prompt("ingrese numero: ");
+	for(repeticiones=0;repeticiones!=numero;repeticiones++)
+	{
+		console.log(repeticiones+"for");
 
-var repetciones = prompt("ingrese el número de repeticiones");
+	}
+
 
 
 

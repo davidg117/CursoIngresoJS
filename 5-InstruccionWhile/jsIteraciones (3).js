@@ -6,7 +6,6 @@ function mostrar()
 	{
 		clave=prompt("Por favor ingrese la clave");
 
-
 	}
 
 
