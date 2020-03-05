@@ -38,7 +38,7 @@ function mostrar()
 		}
 		notaFinal=prompt("Ingrese nota del alumno");
 		notaFinal=parseInt(notaFinal);
-
+  
 		while(isNaN(notaFinal)|| notaFinal<0 || notaFinal>10)
 		{
 			notaFinal=prompt("Ingrese nota del alumno");

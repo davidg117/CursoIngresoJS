@@ -12,7 +12,7 @@ el promedio de cantidad de días por reserva*/
 function mostrar()
 {
 	var nombreDeHuesped;
-	var cantidadDePersonas
+	var cantidadDePersonas;
 	var cantidadDiaDeEstadia;
 	var formaDePago;
 	var respuesta;
