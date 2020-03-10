@@ -8,8 +8,17 @@ function mostrar()
 	var respuesta;
 	var contador;
 	var acumulador;
-	var alumnoHombre;
-	var alumnoMujer;
+	var ChicosAprobadosEnTotal;
+	var contadorDeNenes;
+	var acumuladorDeNenes;
+	var contadorDeGrandes;
+	var acumuladorDeGrandes;
+	var contadorDeJovenes;
+	var acumuladorDeJovenes;
+	var contadorChicas;
+	var acumuladorChicas;
+	var contadorChicos;
+	var acumuladorChicos;
 
 
 	respuesta="si";
@@ -46,19 +55,52 @@ function mostrar()
 
 		}
 
-		if(contador==0)
+		if(notaFinal>4 && sexoAlumno!="M")
 		{
+			ChicosAprobadosEnTotal++;
 
+		}
+		if(edadAlumno<18 && notaFinal>4)
+		{
+			contadorDeNenes++;
+			acumuladorDeNenes=acumuladorDeNenes+notaFinal;
+
+		}else
+		{
+			if(edadAlumno>18)
+			{
+				contadorDeGrandes++;
+				acumuladorDeGrandes=acumuladorDeGrandes+notaFinal;
+
+			}
+			if(edadAlumno>12 || edadAlumno<17)
+			{
+				contadorDeJovenes++;
+				acumuladorDeJovenes=acumuladorDeGrandes+notaFinal;
+			}
+
+
+		}
+		if(sexoAlumno= "F")
+		{
+			contadorChicas++;
+			acumuladorChicas=acumuladorChicas+notaFinal;
+
+		}else
+		{
+			contadorChicos++;
+			acumuladorChicos=acumuladorChicos+notaFinal;
 
 		}
 
 
 
-
-
-
 		respuesta=prompt("¿Quiere pasar a la siguiente persona?");
 	}
+	
+
+
+
 
 
 }
