@@ -10,32 +10,34 @@ function mostrar()
 	var edadPasajeroMasJoven;
 	var edadPasajeroMasViejo;
 	var nombrePasajeroMasViejo;
-	var edadMaxima;
 	var sexoPasajeroMasViejo;
-	var cantidadMujeresTotal;
-	var promedioEdadMujeres;
-	var promedioEdadHombresSolteros;
-	var edadMujeres;
-	var edadHombres;
-	var cantidadMujeresCyV;
+	var contadorMujeresTotal;
+	var contadorMujeresCyV;
+	var acumuladorMujeres;
+	var contadorHombresSolteros;
+	var acumuladorHombresSolteros;
+	var promedioMujeres;
+	var promedioHombreSolteros;
 
-	respuesta="si";
+	respuesta="s";
+	edadPasajeroMasJoven=1000;
+	nombrePasajeroMasJoven= ""
+	edadPasajeroMasViejo=0;
 	contador=0;
-	cantidadMujeresCyV=0;
-	cantidadMujeresTotal=0;
-	edadMaxima=0;
+	acumuladorMujeres=0;
+	contadorMujeresCyV=0;
+	contadorMujeresTotal=0;
 	contadorHombresSolteros=0;
-	edadHombres=0;
-	edadMujeres=0;
+	acumuladorHombresSolteros=0;
 
-	while(respuesta=="si")
+	while(respuesta=="s")
 	{
 		nombre=prompt("Ingrese nombre");
 
 		edad=prompt("Ingrese edad");
 		edad=parseInt(edad);
 
-		while(isNaN(edad) || edad>0 && edad<18 )
+		while(isNaN(edad) || edad < 17 || edad > 100  )
 		{
 			edad=prompt("Ingrese edad");
 			edad=parseInt(edad);
@@ -50,46 +52,56 @@ function mostrar()
 
 		estadoCivil=prompt("Ingrese estadoCivil");
 
-		while(!isNaN(estadoCivil) || estadoCivil!="casado" && estadoCivil!="divorciado" && estadoCivil!="viudo")
+		while(!isNaN(estadoCivil) || estadoCivil!="casado" && estadoCivil!="soltero" && estadoCivil!="viudo")
 		{
 			estadoCivil=prompt("Ingrese estadoCivil");
 
 		}
 
 
-		if(contador==0 || sexo=="m" && estadoCivil=="casado" && edad<edadPasajeroMasJoven )
+		if(edad < edadPasajeroMasJoven && estadoCivil=="casado")
 		{
 			edadPasajeroMasJoven=edad;
 			nombrePasajeroMasJoven=nombre;
 			
 		}
-		if(contador==0)
+		if(edad>edadPasajeroMasViejo)
 		{
-			edad=edadPasajeroMasViejo;
-			sexo=sexoPasajeroMasViejo;
-			nombre=nombrePasajeroMasViejo;
+			edadPasajeroMasViejo=edad;
+			sexoPasajeroMasViejo=sexo;
+			nombrePasajeroMasViejo=nombre;
 
 		}
 	
-			if(sexo=="f" && (estadoCivil=="casado" && estadoCivil=="viudo"))
-			{
-				cantidadMujeresCyV++;
-			}
+		if(sexo=="f" && (estadoCivil=="casado" || estadoCivil=="viudo"))
+		{
+			contadorMujeresCyV++;
+		}
+		if(sexo=="f")
+		{
+			contadorMujeresTotal++;
+			acumuladorMujeres=acumuladorMujeres+edad;
+
+		}
+		if(sexo=="m" && estadoCivil=="soltero")
+		{
+			contadorHombresSolteros++;
+			acumuladorHombresSolteros=acumuladorHombresSolteros+edad;
+		}
 
 		console.log(nombre);
 		contador++;
 		respuesta=prompt("¿quiere seguir?");
 
 	}
-
-	promedioEdadMujeres=edadMujeres/cantidadMujeresTotal;
-	promedioEdadHombresSolteros=edadHombres/contadorHombresSolteros;
+	promedioMujeres=acumuladorMujeres/contadorMujeresTotal;
+	promedioHombreSolteros=acumuladorHombresSolteros/contadorHombresSolteros;
 
 	document.write("<br> el hombre casado más joven. "+nombrePasajeroMasJoven);
-	document.write("<br> el sexo y nombre del pasajero/a más viejo. "+nombrePasajeroMasViejo+"y"+sexoPasajeroMasViejo);
-	document.write("<br> la cantidad de mujeres que hay casadas o viudas."+cantidadMujeresCyV);
-	document.write("<br> el promedio de edad entre las mujeres. "+promedioEdadMujeres);
-	document.write("<br> El promedio de edad entre los hombres solteros. "+promedioEdadHombresSolteros);
+	document.write("<br> el sexo y nombre del pasajero/a más viejo. "+nombrePasajeroMasViejo+" y "+sexoPasajeroMasViejo);
+	document.write("<br> la cantidad de mujeres que hay casadas o viudas."+contadorMujeresCyV);
+	document.write("<br> el promedio de edad entre las mujeres. "+promedioMujeres);
+	document.write("<br> El promedio de edad entre los hombres solteros. "+promedioHombreSolteros);
 
 
 
