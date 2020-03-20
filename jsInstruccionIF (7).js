@@ -16,3 +16,17 @@ function mostrar()
 
 	 
 }
+/*numero=prompt("Ingrese un numero");
+			numero=parseInt(numero);
+			if (numero>0) 
+				{	
+					positivo=positivo+numero;
+					
+				}
+				else{
+						negativo=negativo*numero;
+											
+					}
+			
+			contador++;
+			respuesta=prompt("¿Desea seguir ingresando numeros?");

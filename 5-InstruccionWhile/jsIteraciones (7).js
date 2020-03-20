@@ -8,12 +8,12 @@ function mostrar()
 	contador=0;
 	acumulador=0;
 	respuesta='si';
-	while(respuesta== "si")
+	while(respuesta=="si")
 	{
 		contador=contador+1;
 		contador=parseInt(contador);
 		acumulador=acumulador+numeroIngresado;
-		acumulador=pa
+		acumulador=parseInt(acumulador);
 
 
 	}
