@@ -11,7 +11,14 @@ la forma de pago más utilizada.
 el promedio de cantidad de días por reserva*/
 function mostrar()
 {
-
+	var i;
+	
+	for(i = 0; 1; i++)
+	{
+		alert(i);
+    	if(i == 5) 
+    	break;
+	}
 
 
 
