@@ -5,12 +5,15 @@
 function mostrar()
 {
 	var nombre;
-	var apellido;
-	nombre=prompt("Colocar el nombre",);
-	apellido=prompt("Ponga apellido");
-	document.getElementById('elNombre').value=nombre;
-
-	alert("Se llama "+nombre+" Y apellido es "+apellido);
+	nombre=prompt("Poner Nombre");
+	elNombre.value=nombre;
 
 }
 
+/*var nombre;
+	var apellido;
+	nombre=prompt("Colocar el nombre");
+	apellido=prompt("Ponga apellido");
+	document.getElementById('elNombre').value=nombre;
+
+	alert("Se llama "+nombre+" Y apellido es "+apellido);*/

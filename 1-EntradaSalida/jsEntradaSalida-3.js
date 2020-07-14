@@ -3,9 +3,15 @@ y luego mostrarlo por 'Alert' al presionar el botón  'mostrar'*/
 function mostrar()
 {
 	var nombre;
+	nombre=elNombre.value;
+
+
+
+
+	/*var nombre;
 	nombre=document.getElementById('elNombre').value;
 
-	alert("este farsante es "+nombre);
+	alert("este farsante es "+nombre);*/
 	
 }
 
