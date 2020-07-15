@@ -13,7 +13,7 @@ function mostrarAumento()
 
 	descuento=(elImporte*25)/100;
 
-	elResultado=descuento;
+	elResultado=elImporte-descuento;
 
 	resultado.value=elResultado;
 
