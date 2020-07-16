@@ -1,8 +1,4 @@
-/*1.	Para el departamento de facturación:
-A.	Ingresar tres precios de productos y mostrar la suma de los mismos.
-B.	Ingresar tres precios de productos y mostrar el promedio de los mismos.
-C.	ingresar tres precios de productos  y mostrar precio final (más IVA 21%).
-*///promedio=(A+B+C)/3
+
 /*function Sumar () 
 {
 	var precio1;
@@ -54,14 +50,79 @@ function PrecioFinal ()
 	var precio1;
 	var precio2;
 	var precio3;
-	var precioFinal
-	var total;
+	var aumento;
+	var suma;
+	var precioFinal;
 
 	precio1=document.getElementById('PrecioUno').value;
 	precio2=document.getElementById('PrecioDos').value;
 	precio3=document.getElementById('PrecioTres').value;
 
+	precio1=parseInt(precio1);
+	precio2=parseInt(precio2);
+	precio3=parseInt(precio3);
 
-	
-	
+	aumento=1.21;
+	suma=precio1+precio2+precio3;
+	precioFinal=suma*aumento;
+
+	alert("el precioFinal es="+precioFinal);
+}
+EJERCICIO 2
+function Rectangulo () 
+{
+	var cantidadDeAlambre;
+	var largo;
+	var ancho;
+	var perimetro;
+	var totalHilos;
+
+	largo=document.getElementById('Largo').value;
+	largo=parseInt(largo);
+	ancho=document.getElementById('Ancho').value;
+	ancho=parseInt(ancho);
+
+	perimetro=2*largo+2*ancho;
+	totalHilos=perimetro*3;
+
+	alert("se debe comprar "+totalHilos+" metros de alambre");
+
+
+}
+function Circulo () 
+{
+	var cantidadDeAlambre;
+	var circunferencia;
+	var radio;
+	var totalHilos;
+
+	radio=document.getElementById('Radio').value;
+	radio=parseInt(radio);
+
+	circunferencia=2*Math.PI*radio;
+	circunferencia=parseInt(circunferencia);
+	totalHilos=circunferencia*3;
+	totalHilos=parseInt(totalHilos);
+
+	alert("se debe comprar "+totalHilos+" metros de alambre");
+
+}
+function Materiales () 
+{
+	var ancho;
+	var largo;
+	var cantidadCemento;
+	var cantidadCal;
+
+	largo=document.getElementById('Largo').value;
+	largo=parseInt(largo);
+	ancho=document.getElementById('Ancho').value;
+	ancho=parseInt(ancho);
+
+	cantidadCemento=(largo*ancho)*2;
+	cantidadCal=(largo*ancho)*3;
+
+	alert("Se necesitan "+cantidadCemento+" bolsas de cemento y "+cantidadCal+" bolsas de cal");
+
+
 }

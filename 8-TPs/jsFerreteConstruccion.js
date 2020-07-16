@@ -1,63 +1,77 @@
 /*2.	Para el departamento de Construcción:
-A.	 mostrar la cantidad de alambre a comprar  si se ingresara el largo y el ancho de un terreno rectangular y se debe alambra con tres hilos de alambre.
+A.	mostrar la cantidad de alambre a comprar  si se ingresara el largo y el ancho de un terreno rectangular y se debe alambra con tres hilos de alambre.
 B.	mostrar la cantidad de alambre a comprar  si se ingresara el radio  de un terreno circular y se debe alambra con tres hilos de alambre.
 C.	Para hacer un contrapiso de 1m x 1m se necesitan 2 bolsas de cemento y 3 de cal, debemos mostrar cuantas bolsas se necesitan de cada uno para las medidas que nos ingresen.
 */
 
 function Rectangulo () 
 {
-	var cantidadDeAlambre;
-	var largo;
-	var ancho;
+	var cantidAlambre;
+	var rectLargo;
+	var rectAncho;
 	var perimetro;
-	var totalHilos;
+	var totalAlambre
 
-	largo=document.getElementById('Largo').value;
-	largo=parseInt(largo);
-	ancho=document.getElementById('Ancho').value;
-	ancho=parseInt(ancho);
+	rectLargo=Largo.value;
+	rectAncho=Ancho.value;
 
-	perimetro=2*largo+2*ancho;
-	totalHilos=perimetro*3;
+	rectLargo=parseInt(rectLargo);
+	rectAncho=parseInt(rectAncho);
 
-	alert("se debe comprar "+totalHilos+" metros de alambre");
+	perimetro= (rectLargo*2)+(rectAncho*2)
 
+	totalAlambre=perimetro*3;
+
+
+	alert("la cantidad necesaria es: "+totalAlambre);
 
 }
 function Circulo () 
 {
-	var cantidadDeAlambre;
-	var circunferencia;
-	var radio;
-	var totalHilos;
+	var circRadio;
+	var perimetro;
+	var totalAlambre;
 
-	radio=document.getElementById('Radio').value;
-	radio=parseInt(radio);
+	circRadio=Radio.value;
+	circRadio=parseInt(circRadio);
 
-	circunferencia=2*Math.PI*radio;
-	circunferencia=parseInt(circunferencia);
-	totalHilos=circunferencia*3;
-	totalHilos=parseInt(totalHilos);
+	perimetro=2*circRadio*Math.PI;
 
-	alert("se debe comprar "+totalHilos+" metros de alambre");
+	//perimetro=Math.ceil(perimetro)
+	//console.log(perimetro);
+	/*console.log(perimetro.toFixed(3));
+	/*console.log(Math.round(perimetro));
+	console.log(Math.floor(perimetro));*/
+
+	totalAlambre=perimetro*3;
+
+	alert("eL TOTAL es: "+totalAlambre);
+
+	console.log()
+
+
 
 }
 function Materiales () 
 {
-	var ancho;
-	var largo;
-	var cantidadCemento;
-	var cantidadCal;
+	var matLargo;
+	var matAncho;
+	var bolsasCemento;
+	var bolsasCal;
+	var area;
 
-	largo=document.getElementById('Largo').value;
-	largo=parseInt(largo);
-	ancho=document.getElementById('Ancho').value;
-	ancho=parseInt(ancho);
+	matLargo=Largo.value;
+	matAncho=Ancho.value;
 
-	cantidadCemento=(largo*ancho)*2;
-	cantidadCal=(largo*ancho)*3;
+	matAncho=parseInt(matAncho);
+	matLargo=parseInt(matLargo);
 
-	alert("Se necesitan "+cantidadCemento+" bolsas de cemento y "+cantidadCal+" bolsas de cal");
+	area=matLargo*matAncho
+
+	bolsasCemento=area*2;
+	bolsasCal=area*3;
+
+	alert("Se requieren "+bolsasCemento+" bolsas de cemento y "+bolsasCal+" bolsas de cal");
 
 
 }

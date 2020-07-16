@@ -2,77 +2,69 @@
 A.	Ingresar tres precios de productos y mostrar la suma de los mismos.
 B.	Ingresar tres precios de productos y mostrar el promedio de los mismos.
 C.	ingresar tres precios de productos  y mostrar precio final (más IVA 21%).
-*/
+*///promedio=(A+B+C)/3
+
 function Sumar () 
 {
 	var precio1;
 	var precio2;
 	var precio3;
-	var total;
 
-	precio1=document.getElementById('PrecioUno').value;
-	precio2=document.getElementById('PrecioDos').value;
-	precio3=document.getElementById('PrecioTres').value;
+	precio1=PrecioUno.value;//profe despues cuando pueda me explica para atualizar
+	precio2=PrecioDos.value;
+	precio3=PrecioTres.value;
 
 	precio1=parseInt(precio1);
 	precio2=parseInt(precio2);
 	precio3=parseInt(precio3);
+	var suma;
 
-	total=precio1+precio2+precio3;
-	alert("total="+total);
+	suma=precio1+precio2+precio3;
 
-	
+	alert("El total: "+suma);
+
 }
 function Promedio () 
-{
+{	
 	var precio1;
 	var precio2;
 	var precio3;
-	var suma;
-	var romedio;
+	var promedio;
 
-	precio1=document.getElementById('PrecioUno').value;
-	precio2=document.getElementById('PrecioDos').value;
-	precio3=document.getElementById('PrecioTres').value;
+	precio1=PrecioUno.value;
+	precio2=PrecioDos.value;
+	precio3=PrecioTres.value;
 
 	precio1=parseInt(precio1);
 	precio2=parseInt(precio2);
 	precio3=parseInt(precio3);
 
-	suma= precio1+precio2+precio3;
-	promedio=suma/3;
+	promedio=(precio1+precio2+precio3)/3;
 
-	alert("el promedio es:"+promedio);
+	alert("El promedio es: "+promedio);
 
-
-
-	
-	
 }
 function PrecioFinal () 
 {
 	var precio1;
 	var precio2;
 	var precio3;
-	var aumento;
 	var suma;
-	var precioFinal;
+	var aumento;
 
-	precio1=document.getElementById('PrecioUno').value;
-	precio2=document.getElementById('PrecioDos').value;
-	precio3=document.getElementById('PrecioTres').value;
+	precio1=PrecioUno.value;
+	precio2=PrecioDos.value;
+	precio3=PrecioTres.value;
 
 	precio1=parseInt(precio1);
 	precio2=parseInt(precio2);
 	precio3=parseInt(precio3);
 
-	aumento=1.21;
-	suma=precio1+precio2+precio3;
-	precioFinal=suma*aumento;
+	suma=precio1+precio3+precio3;
 
-	alert("el precioFinal es="+precioFinal);
+	aumento=suma*1.21;
 
+	alert("El total es: "+aumento);
 
-	
 	
 }
