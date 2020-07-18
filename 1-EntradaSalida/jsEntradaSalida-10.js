@@ -4,9 +4,16 @@ mostrar el importe con un Descuento del 25 %
 en el cuadro de texto "RESULTADO"*/
 function mostrarAumento()
 {
-	var elImporte;
+	var nombre;
+
+	nombre=prompt("Poner nombre");
+	
+	alert(nombre);
+	/*var elImporte;
 	var descuento;
 	var elResultado;
+
+
 
 	elImporte=importe.value;
 	elImporte=parseInt(elImporte);
@@ -15,7 +22,7 @@ function mostrarAumento()
 
 	elResultado=elImporte-descuento;
 
-	resultado.value=elResultado;
+	resultado.value=elResultado;*/
 
 
 	

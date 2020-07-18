@@ -10,6 +10,7 @@ function FahrenheitCentigrados ()
 	fahrenheit=Temperatura.value;
 	fahrenheit=parseInt(fahrenheit);
 	
+	centígrados=
 
 }
 
