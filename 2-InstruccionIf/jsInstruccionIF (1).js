@@ -1,11 +1,18 @@
 function mostrar()
 {
-	var edad;
-	edad=document.getElementById('edad').value;
-	if(edad==15)
+	var laEdad;
+	laEdad=edad.value;
+
+	if(laEdad==15)
 	{
-		alert("algo");
+		alert("niña bonita");
+
+	}else
+	{
+		alert("chica mayor");
 	}
 
-
 }//FIN DE LA FUNCIÓN
+/*ej: <,>,<=.>=,!=,===,!==
+Operadores logicos: &&, ||,!
+*/

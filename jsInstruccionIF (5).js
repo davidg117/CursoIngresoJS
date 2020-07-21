@@ -17,3 +17,19 @@ function mostrar()
 
 
 }//FIN DE LA FUNCIÓN
+	/*var numeroUno=12;
+	var numeroDos=2;
+	var numeroTres=22;
+
+	if(numeroUno>numeroDos&&numeroUno>numeroTres)
+	{
+		alert("numero alto"+numeroUno);
+	}
+	if(numeroUno>numeroUno&&numeroDos>numeroTres)
+	{
+		alert("numero alto"+numeroDos);
+	}
+	if(numeroUno>numeroUno&&numeroTres>numeroDos)
+	{
+		alert("numero alto"+numeroTres);
+	}*/
