@@ -4,6 +4,7 @@ function mostrar()
 	var numeroRandom2;
 	var max;
 	var min;
+	var multiplicar;
 
 	max=51;
 	min=1;
@@ -17,6 +18,11 @@ function mostrar()
 	}else
 	{
 		alert("se divide");
+	}
+	if(numeroRandom1)
+	{
+		
+
 	}
 }
 
