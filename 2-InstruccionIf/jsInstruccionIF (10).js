@@ -1,21 +1,28 @@
 function mostrar()
 {
-	//Genero el número RANDOM entre 1 y 10 
 	var numeroRandom;
-	numeroRandom=Math.floor(Math.random() * 10) + 1;
+	var max;
+	var min;
 
+	max=11;
+	min=1;
+
+	numeroRandom=Math.floor(Math.random() * (max - min) ) + min;
+	
 	if(numeroRandom>8)
 	{
-		console.log("EXCELENTE "+numeroRandom);
+		alert("EXCELENTE");
 	}else
 	{
 		if(numeroRandom>4)
 		{
-			console.log("APROBÓ "+numeroRandom);
+			alert("APROBÓ");
 		}else
 		{
-			console.log("Vamos, la proxima se puede "+numeroRandom);
+			alert("Vamos, la proxima se puede");
 		}
 	}
+	console.log(numeroRandom);
+	
 
 }//FIN DE LA FUNCIÓN
