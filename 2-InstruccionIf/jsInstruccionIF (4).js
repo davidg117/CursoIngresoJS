@@ -1,22 +1,18 @@
 function mostrar()
 {
-	var laEdad;
-	laEdad=edad.value;
-
-	if(laEdad<18&&laEdad>12)
+	var edad;
+	edad=document.getElementById('edad').value;
+	edad=parseInt(edad);
+	if(edad<"18"&& edad>"12")
 	{
-		alert("es joven");
+		alert("mayor");
+
+	}
+	else
+	{
+		alert("menor");
 	}
 
 
-	/*if(laEdad<18)
-	{
-		if(laEdad>12)
-		{
-			alert("es joven");
-
-		}
-
-	}*/
 
 }//FIN DE LA FUNCIÓN

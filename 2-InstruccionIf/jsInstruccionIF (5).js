@@ -1,30 +1,16 @@
 function mostrar()
 {
-	var laEdad;
-
-	laEdad=edad.value;
-
-	if(!(laEdad<17&&laEdad>12))
+	var edad;
+	edad=document.getElementById('edad').value;
+	edad=parseInt(edad);
+	if(edad>"17")
 	{
-		alert("no teen");
+		alert("No teen");
 	}
-	
+	if(edad<"13")
+	{
+		alert("No teen");
+	}
+
 
 }//FIN DE LA FUNCIÓN
-/*function mostrar()
-{
-	var laEdad;
-
-	laEdad=edad.value;
-
-	if(laEdad>17)
-	{
-		alert("no teen");
-	}
-	if(laEdad<12)
-	{
-		alert("no teen")
-	}
-	
-
-}//FIN DE LA FUNCIÓN*/

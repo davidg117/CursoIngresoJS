@@ -14,145 +14,86 @@ function mostrar()
 	alert("Se llama "+nombre+" Y apellido es "+apellido);
 
 }
-
-
-
-/*function CalcularPrecio () 
+/*function mostrar()
+{1
+//tomo la edad  
+var mesDelAño;
+mesDelAño= document.getElementById('mes').value;
+switch(mesDelAño)
 {
+	case "Enero":
+		alert("que comiences bien el año!!!.");
+		break;
+	case "Marzo":
+		alert("a clases!!!.");
+		break;
+	case "Julio":
+		alert("se vienen las vacaciones!!!.");
+		break;
+	case"Diciembre":
+		alert("Felices fiesta!!!.");
+		break;
 
-	var cantidaddeLamparas;
-	var marca;
-	var precioBruto;
-	var descuento;
-	var precioDescuento;
 
-	cantidadLamparas=document.getElementById('Cantidad').value;
-	cantidadLamparas=parseInt(cantidadLamparas);
-	marca=document.getElementById('Marca').value;
-	precioBruto=cantidadLamparas*35;
-	console.info("bruto" , precioBruto);
-
-
-	switch(cantidadDeLamparas)
-	{
-		case 5:
-
-			switch(marca)
-			{
-				case "ArgentinaLuz":
-					descuento=40;
-				break;
-				default:
-				descuento=30
-				break;
-			}
-
-			break;
-		case 4:	
-			switch(marca)
-			{
-				case:"ArgentinaLuz"
-				case:"FelipeLamparas"
-					descuento=25;
-				break;
-				default:
-					descuento=20;
-				break;
-			}
-			break;
-		case 3:
-			switch(marca)
-			{
-				case"ArgentinaLuz"
-				descuento=15
-				break;
-				case"FelipeLamparas"
-				descuento=10
-				break;
-				default:
-				descuento=5
-				break;
-			}
-			break;
-		case 1:   					//hasta que no se pone break; lo toma como un solo case//
-		case 2:
-			descuento=0;
-			break;
-		default:
-			descuento=50;
-			break;			
-					
-
-	}
-
-/*
-	descuento=0;
 	
-	if(cantidadLamparas>5)
-	{
-		descuento=50;
+}
+2
+function mostrar()
+{
+//tomo la edad  
+var mesDelAño;
+mesDelAño=document.getElementById('mes').value;
 
-	}
-	else
-	{
-		if(cantidadLamparas==5)
-		{
-			if(marca=="ArgentinaLuz")
-				{
-					descuento=40;
-				}
-				else
-				{
-					descuento=30;
-				}
-		}
-		else
-		{
-			if(cantidadLamparas==4)
-			{
-				if(marca=="ArgentinaLuz" || marca=="FelipeLamparas" )
-				{
-					descuento=25;
-				}
-				else
-				{
-					descuento=20;
-				}
+switch(mesDelAño)
+{
+	case "Marzo":
+	case "Abril":
+	case "Mayo":
+	case "Junio":
+	case "Julio":
+	case "Agosto":
+		alert("Abrigate que hace frio.");
+		break;
+	case "Septiembre":
+	case "Octubre":
+	case "Noviembre":
+	case "Diciembre":
+		alert("Ya pasamos el frio, ahora calor!!!.");
+		break;
+	default:
+		alert("Falta para el invierno.");
+		break;
+		
 
 
-			}
-			else
-			{
-				if(cantidaddelamparas==3)
-				{
-					if(marca=="ArgentinaLuz")
-					{
-						descuento=15;
-					}
-					else
-					{
-						if(marca=="FelipeLamparas")
-						{
-							descuento=10;
-						}
-						else
-						{
-							descuento=5;
-						}
-					}
 
-				}
-			}
-		}
-	}*/
+}
+
+
+
+}//FIN DE LA FUNCIÓN
+3
+function mostrar()
+{
+//tomo la edad  
+var mesDelAño; 
+mesDelAño=document.getElementById('mes').value;
+
+switch(mesDelAño)
+{
+	case "Febrero":
+		alert("Este mes no tiene más de 29 días.");
+		break;
+	default:
+		alert("Este mes tiene 30 o más días");
+		break;
+
+
+}
+	
 	
 
-	/*precioDescuento=precioBruto-precioBruto*descuento/100;
-	console.log(precioDescuento);
-	precioDescuento=parseInt(precioDescuento);
-	document.getElementById('precioDescuento').value=precioDescuento
 
+}//FIN DE LA FUNCIÓN
 
-
- 	
-}//FIN DE LA FUNCION*/
+*/
