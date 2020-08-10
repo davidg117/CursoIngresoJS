@@ -10,12 +10,12 @@ function mostrar()
 	var contador;
 	var acumulador;
 	var maxTemp;
-	var paisPasajeroMaxTemp;
-	var flagTemp;
+	var paisMaxTemp;
+	var contadorPaisMaxTemp;
 
-	flagTemp=true;
 	contador=0;
 	acumulador=0;
+	contadorPaisMaxTemp=0;
 	respuesta="si";
 
 	while(respuesta=="si")
@@ -55,9 +55,26 @@ function mostrar()
 			temperatura=parseInt(temperatura);
 		}
 
-		if(flagTemp)// A)
+		if(temperatura>maxTemp)// A)
 		{
+			maxTemp=temperatura;
+			paisMaxTemp=nacionalidad;
+			contadorPaisMaxTemp++;
 		}
+
+
+
+
+		console.log(nombre)
+		contador++
+		respuesta=prompt("¿desea seguir?");
+
+	}
+	console.log("el pais de la persona con mayor temperatura es: "+paisMaxTemp);
+
+
+}
+
 
 
 		/*if(status=="soltero")//B)
@@ -92,8 +109,3 @@ function mostrar()
 				acumuladorMayoresConFiebre=acumuladorMayoresConFiebre+edad;
 			}
 */
-
-	}
-
-
-}
